@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import '../src/styles/index.css';
+import '../styles/index.css';
 
 const MyApp = ({ Component, ...props }) => <Component {...props} />;
 
