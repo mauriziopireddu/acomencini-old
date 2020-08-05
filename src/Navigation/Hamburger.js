@@ -1,8 +1,8 @@
 const Hamburger = () => (
-  <div className="block lg:hidden">
+  <div className="block sm:hidden">
     <button
       type="button"
-      className="flex items-center px-3 py-2 border rounded hover:text-white hover:border-white"
+      className="flex items-center px-3 py-2 text-outline border rounded hover:text-outline hover:border-outline"
     >
       <svg
         className="fill-current h-3 w-3"

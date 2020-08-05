@@ -3,7 +3,7 @@ import { NavigationItem } from './NavigationItem';
 
 const Navigation = () => (
   <nav className="flex items-center justify-between flex-wrap p-6">
-    <div className="flex items-center flex-shrink-0 text-white mr-6">
+    <div className="flex items-center flex-shrink-0 text-outline mr-6">
       <span className="font-semibold text-xl tracking-tight">AC</span>
     </div>
     <Hamburger />
@@ -12,6 +12,8 @@ const Navigation = () => (
       <div>
         <NavigationItem text="About Me" />
         <NavigationItem text="Blog" />
+        <NavigationItem text="Portfolio" />
+        <NavigationItem text="Contact" />
       </div>
     </div>
   </nav>
