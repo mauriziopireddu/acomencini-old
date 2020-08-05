@@ -5,7 +5,9 @@ module.exports = {
       primary: '#36605E',
       outline: '#FFFFFF',
     },
-    extend: {},
+    fontFamily: {
+      sans: ['Playfair Display', 'Arial', 'sans-serif'],
+    },
   },
   variants: {},
   plugins: [],
