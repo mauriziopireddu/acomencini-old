@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Content from '../src/Content';
 import SideHero from '../src/SideHero/SideHero';
 
 const Index = () => (
@@ -9,7 +10,7 @@ const Index = () => (
     </Head>
     <div className="grid grid-cols-1 md:grid-cols-2 h-screen">
       <SideHero />
-      <div className="">2</div>
+      <Content />
     </div>
   </>
 );
