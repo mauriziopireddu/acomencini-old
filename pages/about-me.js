@@ -2,17 +2,17 @@ import Head from 'next/head';
 import Content from '../src/Content';
 import SideHero from '../src/SideHero/SideHero';
 
-const Index = () => (
+const AboutMe = () => (
   <>
     <Head>
-      <title>Alessandra Comencini</title>
+      <title>About Me | Alessandra Comencini</title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
     <div className="grid grid-cols-1 md:grid-cols-2 h-screen">
       <SideHero />
-      <Content heading="Hi, I'm Alessandra" />
+      <Content heading="About me" />
     </div>
   </>
 );
 
-export default Index;
+export default AboutMe;

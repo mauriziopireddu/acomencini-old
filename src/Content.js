@@ -1,7 +1,9 @@
-const Content = () => (
+import PropTypes from 'prop-types';
+
+const Content = ({ heading }) => (
   <div className="flex justify-center items-center">
     <div className="p-12">
-      <h1 className="text-4xl font-semibold mb-6">Hi, I'm Alessandra</h1>
+      <h1 className="text-4xl font-semibold mb-6">{heading}</h1>
       <p className="mb-6">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
         eleifend quis lectus sed fermentum. Praesent dignissim eleifend est ac
@@ -15,4 +17,9 @@ const Content = () => (
     </div>
   </div>
 );
+
+Content.propTypes = {
+  heading: PropTypes.string.isRequired,
+};
+
 export default Content;
