@@ -11,10 +11,8 @@ const AboutMe = () => (
     <Head>
       <title>{title}</title>
     </Head>
-    <div className="grid grid-cols-1 md:grid-cols-2 h-screen">
-      <SideHero />
-      <Content heading={PAGE_NAME} />
-    </div>
+    <SideHero />
+    <Content heading={PAGE_NAME} />
   </>
 );
 

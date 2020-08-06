@@ -10,10 +10,8 @@ const Index = () => (
     <Head>
       <title>{title}</title>
     </Head>
-    <div className="grid grid-cols-1 md:grid-cols-2 h-screen">
-      <SideHero />
-      <Content heading="Hi, I'm Alessandra" />
-    </div>
+    <SideHero />
+    <Content heading="Hi, I'm Alessandra" />
   </>
 );
 
