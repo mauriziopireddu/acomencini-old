@@ -1,6 +1,9 @@
 import Link from 'next/link';
 import Hamburger from './Hamburger';
 import { NavigationItem } from './NavigationItem';
+import config from '../../../config/config';
+
+const { about, blog, portfolio, contact } = config.pages;
 
 const Navigation = () => (
   <nav className="flex items-center justify-between flex-wrap">
@@ -15,10 +18,10 @@ const Navigation = () => (
     <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
       <div className="text-sm lg:flex-grow"></div>
       <div>
-        <NavigationItem text="About Me" path="/about-me" />
-        <NavigationItem text="Blog" path="/blog" />
-        <NavigationItem text="Portfolio" path="/portfolio" />
-        <NavigationItem text="Contact" path="contact" />
+        <NavigationItem text={about.name} path={about.path} />
+        <NavigationItem text={blog.name} path={blog.path} />
+        <NavigationItem text={portfolio.name} path={portfolio.path} />
+        <NavigationItem text={contact.name} path={contact.path} />
       </div>
     </div>
   </nav>

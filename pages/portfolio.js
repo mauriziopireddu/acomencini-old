@@ -1,10 +1,11 @@
 import Head from 'next/head';
+import config from '../config/config';
 import getTitle from '../lib/title';
 import Content from '../src/Content';
 import SideHero from '../src/SideHero/SideHero';
 
-const PAGE_NAME = 'Portfolio';
-const title = getTitle(PAGE_NAME);
+const { name: pageName } = config.pages.portfolio;
+const title = getTitle(pageName);
 
 const Portfolio = () => (
   <>
@@ -12,7 +13,7 @@ const Portfolio = () => (
       <title>{title}</title>
     </Head>
     <SideHero />
-    <Content heading={PAGE_NAME} />
+    <Content heading={pageName} />
   </>
 );
 

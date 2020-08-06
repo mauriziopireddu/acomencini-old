@@ -7,6 +7,13 @@ const config = {
     goodreads:
       'https://www.goodreads.com/user/show/114878357-alessandra-comencini',
   },
+  pages: {
+    about: { name: 'About', path: '/about' },
+    blog: { name: 'Blog', path: '/blog' },
+    contact: { name: 'Contact', path: '/contact' },
+    portfolio: { name: 'Portfolio', path: '/portfolio' },
+    notFound: { name: '404 Not Found' },
+  },
 };
 
 export default config;

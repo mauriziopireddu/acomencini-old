@@ -1,10 +1,11 @@
 import Head from 'next/head';
+import config from '../config/config';
 import getTitle from '../lib/title';
 import Content from '../src/Content';
 import SideHero from '../src/SideHero/SideHero';
 
-const PAGE_NAME = 'Contact';
-const title = getTitle(PAGE_NAME);
+const { name: pageName } = config.pages.blog;
+const title = getTitle(pageName);
 
 const Contact = () => (
   <>
@@ -12,7 +13,7 @@ const Contact = () => (
       <title>{title}</title>
     </Head>
     <SideHero />
-    <Content heading={PAGE_NAME} />
+    <Content heading={pageName} />
   </>
 );
 
