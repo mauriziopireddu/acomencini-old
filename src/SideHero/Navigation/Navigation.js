@@ -10,7 +10,7 @@ const Navigation = () => (
     <div className="flex items-center flex-shrink-0 text-outline mr-6">
       <span className="font-semibold text-2xl tracking-tight">
         <Link href="/">
-          <a>AC</a>
+          <a>{config.acronym}</a>
         </Link>
       </span>
     </div>

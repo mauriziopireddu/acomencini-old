@@ -1,4 +1,5 @@
 const config = {
+  acronym: 'AC',
   persona: 'Alessandra Comencini',
   social: {
     facebook: 'https://www.facebook.com/alessandra.comencini',

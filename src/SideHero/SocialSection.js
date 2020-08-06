@@ -5,9 +5,9 @@ import {
   faLinkedin,
 } from '@fortawesome/free-brands-svg-icons';
 import SocialIcon from './SocialIcon';
-import social from '../../config/social';
+import config from '../../config/config';
 
-const { facebook, instagram, linkedin, goodreads } = social;
+const { facebook, instagram, linkedin, goodreads } = config.social;
 
 const SocialSection = () => (
   <div className="absolute bottom-0">
