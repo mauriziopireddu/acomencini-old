@@ -4,14 +4,17 @@ import {
   faInstagram,
   faLinkedin,
 } from '@fortawesome/free-brands-svg-icons';
-import { SocialIcon } from './SocialIcon';
+import SocialIcon from './SocialIcon';
+import social from '../../config/social';
+
+const { facebook, instagram, linkedin, goodreads } = social;
 
 const SocialSection = () => (
   <div className="absolute bottom-0">
-    <SocialIcon icon={faFacebookSquare} />
-    <SocialIcon icon={faInstagram} />
-    <SocialIcon icon={faLinkedin} />
-    <SocialIcon icon={faGoodreads} />
+    <SocialIcon icon={faFacebookSquare} link={facebook} />
+    <SocialIcon icon={faInstagram} link={instagram} />
+    <SocialIcon icon={faLinkedin} link={linkedin} />
+    <SocialIcon icon={faGoodreads} link={goodreads} />
   </div>
 );
 
