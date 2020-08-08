@@ -7,7 +7,7 @@ const { about, blog, portfolio, contact } = config.pages;
 
 const Navigation = () => (
   <nav className="flex items-center justify-between flex-wrap">
-    <div className="flex items-center flex-shrink-0 text-outline mr-6">
+    <div className="flex items-center flex-shrink-0 text-secondary mr-6">
       <span className="font-semibold text-2xl tracking-tight">
         <Link href="/">
           <a>{config.acronym}</a>

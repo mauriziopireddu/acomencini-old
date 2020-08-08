@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export const NavigationItem = ({ text, path }) => (
   <Link href={path}>
-    <a className="block mt-4 md:inline-block lg:mt-0 text-outline ml-8">
+    <a className="block mt-4 md:inline-block lg:mt-0 text-secondary ml-8 hover:border-b-2 border-secondary-600">
       {text}
     </a>
   </Link>

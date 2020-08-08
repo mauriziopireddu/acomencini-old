@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const SocialIcon = ({ icon, link }) => (
   <a href={link} target="_blank" rel="noopener noreferrer">
-    <FontAwesomeIcon icon={icon} className="text-outline mr-3" size="lg" />
+    <FontAwesomeIcon icon={icon} className="text-secondary mr-3" size="lg" />
   </a>
 );
 

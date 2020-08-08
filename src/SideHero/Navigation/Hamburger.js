@@ -2,7 +2,7 @@ const Hamburger = () => (
   <div className="block sm:hidden">
     <button
       type="button"
-      className="flex items-center px-3 py-2 text-outline border rounded hover:text-outline hover:border-outline"
+      className="flex items-center px-3 py-2 text-secondary border rounded hover:text-secondary hover:border-secondary"
     >
       <svg
         className="fill-current h-3 w-3"
