@@ -2,7 +2,7 @@ const config = {
   acronym: 'AC',
   persona: 'Alessandra Comencini',
   social: {
-    facebook: 'https://www.facebook.com/alessandra.comencini',
+    twitter: 'https://twitter.com/acomencini1',
     instagram: 'https://www.instagram.com/acomencini/',
     linkedin: 'https://www.linkedin.com/in/alessandra-comencini/',
     goodreads:
