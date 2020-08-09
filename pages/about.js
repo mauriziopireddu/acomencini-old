@@ -1,8 +1,8 @@
 import Head from 'next/head';
-import getTitle from '../lib/title';
-import Content from '../src/Content';
-import SideHero from '../src/SideHero/SideHero';
-import config from '../config/config';
+import { getTitle } from '../src/lib/title';
+import Content from '../src/components/Content';
+import SideHero from '../src/components/SideHero/SideHero';
+import { config } from '../config/config';
 
 const { name: pageName } = config.pages.about;
 const title = getTitle(pageName);

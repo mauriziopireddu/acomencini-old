@@ -1,7 +1,7 @@
 import Head from 'next/head';
-import Content from '../src/Content';
-import SideHero from '../src/SideHero/SideHero';
-import getTitle from '../lib/title';
+import Content from '../src/components/Content';
+import { getTitle } from '../src/lib/title';
+import SideHero from '../src/components/SideHero/SideHero';
 
 const title = getTitle();
 

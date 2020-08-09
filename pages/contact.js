@@ -1,10 +1,10 @@
 import Head from 'next/head';
-import config from '../config/config';
-import getTitle from '../lib/title';
-import Content from '../src/Content';
-import SideHero from '../src/SideHero/SideHero';
+import { config } from '../config/config';
+import { getTitle } from '../src/lib/title';
+import Content from '../src/components/Content';
+import SideHero from '../src/components/SideHero/SideHero';
 
-const { name: pageName } = config.pages.blog;
+const { name: pageName } = config.pages.contact;
 const title = getTitle(pageName);
 
 const Contact = () => (

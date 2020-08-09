@@ -1,4 +1,4 @@
-const config = {
+export const config = {
   acronym: 'AC',
   persona: 'Alessandra Comencini',
   social: {
@@ -16,5 +16,3 @@ const config = {
     notFound: { name: '404 Not Found' },
   },
 };
-
-export default config;

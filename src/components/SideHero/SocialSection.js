@@ -1,12 +1,11 @@
 import {
-  faFacebookSquare,
   faGoodreads,
   faInstagram,
   faLinkedin,
   faTwitterSquare,
 } from '@fortawesome/free-brands-svg-icons';
 import SocialIcon from './SocialIcon';
-import config from '../../config/config';
+import { config } from '../../../config/config';
 
 const { twitter, instagram, linkedin, goodreads } = config.social;
 
