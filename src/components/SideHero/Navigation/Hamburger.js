@@ -1,5 +1,5 @@
 const Hamburger = () => (
-  <div className="block lg:hidden">
+  <div className="block">
     <button
       type="button"
       className="flex items-center px-3 py-2 text-secondary border rounded hover:text-secondary hover:border-secondary"

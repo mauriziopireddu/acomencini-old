@@ -2,7 +2,8 @@ import Link from 'next/link';
 import Hamburger from './Hamburger';
 import { NavigationItem } from './NavigationItem';
 import { config } from '../../../../config/config';
-import { Sizes, ShowFromSize } from '../../../common/responsive/ShowFromSize';
+import { ShowFromSize } from '../../../common/responsive/ShowFromSize';
+import { HideFromSize } from '../../../common/responsive/HideFromSize';
 
 const { about, blog, portfolio, contact } = config.pages;
 
@@ -15,7 +16,9 @@ const Navigation = () => (
         </Link>
       </span>
     </div>
-    <Hamburger />
+    <HideFromSize size="lg">
+      <Hamburger />
+    </HideFromSize>
     <ShowFromSize size="lg">
       <div className="inline">
         <NavigationItem text={about.name} path={about.path} />
