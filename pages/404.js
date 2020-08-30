@@ -4,7 +4,7 @@ import { getTitle } from '../src/lib/title';
 import Content from '../src/components/Content';
 import SideHero from '../src/components/SideHero/SideHero';
 
-const { name: pageName } = config.pages.notFound;
+const { name: pageName, illustration } = config.pages.notFound;
 const title = getTitle(pageName);
 
 const NotFound = () => (
@@ -12,7 +12,7 @@ const NotFound = () => (
     <Head>
       <title>{title}</title>
     </Head>
-    <SideHero />
+    <SideHero illustration={illustration} />
     <Content heading="404 | Not Found" />
   </>
 );

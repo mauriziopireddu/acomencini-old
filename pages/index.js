@@ -2,6 +2,9 @@ import Head from 'next/head';
 import Content from '../src/components/Content';
 import { getTitle } from '../src/lib/title';
 import SideHero from '../src/components/SideHero/SideHero';
+import { config } from '../config/config';
+
+const { illustration } = config.pages.index;
 
 const title = getTitle();
 
@@ -10,18 +13,20 @@ const Index = () => (
     <Head>
       <title>{title}</title>
     </Head>
-    <SideHero />
-    <Content heading="Hi, I'm Alessandra">
-      <p className="mb-6">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-        eleifend quis lectus sed fermentum. Praesent dignissim eleifend est ac
-        mollis. Aliquam mattis, felis eget ultrices iaculis, sem nibh tincidunt
-        lacus, eu malesuada nisl ex id sem. Sed eget sagittis urna. Pellentesque
-        habitant morbi tristique senectus et netus et malesuada fames ac turpis
-        egestas. Quisque viverra pulvinar justo, sit amet sagittis dui fermentum
-        vitae. Vestibulum in tellus metus.
+    <SideHero illustration={illustration} />
+    <Content heading="Hi, I'm Alessandra.">
+      <p className="mb-6 text-xl">
+        I'm a digital marketer.
+        <br />
+        Originally from Italy, currently in Ireland.
+        <br />
+        I’m a Bookworm, Dog Lover and a Hopeless Romantic.
+        <br />
+        I am as attracted to minimalism as to small (and useless) design
+        objects.
+        <br />
+        You can find me frequenting small cafes or stationary shops.
       </p>
-      <p className="text-xl font-semibold italic">Something catchy</p>
     </Content>
   </>
 );

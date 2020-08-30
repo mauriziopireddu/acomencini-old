@@ -4,7 +4,7 @@ import { getTitle } from '../src/lib/title';
 import Content from '../src/components/Content';
 import SideHero from '../src/components/SideHero/SideHero';
 
-const { name: pageName } = config.pages.blog;
+const { name: pageName, illustration } = config.pages.blog;
 const title = getTitle(pageName);
 
 const AboutMe = () => (
@@ -12,7 +12,7 @@ const AboutMe = () => (
     <Head>
       <title>{title}</title>
     </Head>
-    <SideHero />
+    <SideHero illustration={illustration} />
     <Content heading={pageName} />
   </>
 );
