@@ -5,7 +5,7 @@ import MobileNavigation from '../components/MobileNavigation';
 export const mobileNavigationContext = createContext({});
 
 export const MobileNavigationProvider = ({ children }) => {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
 
   const toggleMobileNavigation = () => setOpen(isOpen => !isOpen);
 
