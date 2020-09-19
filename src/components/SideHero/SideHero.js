@@ -3,15 +3,14 @@ import Navigation from './Navigation/Navigation';
 import SocialSection from './SocialSection';
 
 const SideHero = ({ illustration }) => (
-  <div className="bg-primary p-8 relative">
+  <div className="bg-primary px-8 pt-8 relative">
     <div className="relative h-full">
       <Navigation />
       <SocialSection />
       <img
         src={illustration.path}
-        className="absolute"
+        className="lg:absolute bottom-0"
         alt={illustration.alt}
-        style={{ marginBottom: -20, width: 670, right: -55, bottom: -30 }}
       />
     </div>
   </div>

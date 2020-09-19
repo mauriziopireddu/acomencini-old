@@ -11,6 +11,8 @@ export const config = {
   },
   pages: {
     index: {
+      path: '/',
+      name: 'Home',
       illustration: {
         path: `${ILLUSTRATION_BASEPATH}/index.png`,
         alt: '',

@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { config } from '../config/config';
-import { getTitle } from '../src/lib/title';
+import { getTitle } from '../src/common/title';
 import Content from '../src/components/Content';
 import SideHero from '../src/components/SideHero/SideHero';
 
