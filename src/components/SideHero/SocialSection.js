@@ -10,7 +10,7 @@ import { config } from '../../../config/config';
 const { twitter, instagram, linkedin, goodreads } = config.social;
 
 const SocialSection = () => (
-  <div className="absolute bottom-0">
+  <div className="absolute bottom-0 z-10">
     <SocialIcon icon={faLinkedin} link={linkedin} />
     <SocialIcon icon={faTwitterSquare} link={twitter} />
     <SocialIcon icon={faInstagram} link={instagram} />
