@@ -9,7 +9,7 @@ const SideHero = ({ illustration }) => (
       <SocialSection />
       <img
         src={illustration.path}
-        className="lg:absolute bottom-0"
+        className="lg:absolute bottom-0 z-0"
         alt={illustration.alt}
       />
     </div>
